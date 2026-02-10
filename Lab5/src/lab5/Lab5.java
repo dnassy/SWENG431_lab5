@@ -54,6 +54,9 @@ public class Lab5 {
             for(Range range: ranges) {
                 Random random = new Random();
                 
+                // Random generation bound by current range
+                // No need for check, since we use the range as our
+                // discriminator for random.
                 // Last range in list is fully inclusive
                 if (range == ranges.getLast()) {
                     base.add(random.nextInt(range.low, range.high + 1));
@@ -62,6 +65,7 @@ public class Lab5 {
                     base.add(random.nextInt(range.low, range.high));
                 }
                 // recurse for next line, adding current index to sum
+                // foo not needed if we use indexOf
                 recursiveGeneration(reader, base, sum+ranges.indexOf(range));
             }
         }
