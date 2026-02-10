@@ -26,3 +26,6 @@ replay_pid*
 /Lab5/nbproject
 /Lab5/*.xml
 /Lab5/*.mf
+/Lab5/build/
+*Eq.txt
+*test.txt

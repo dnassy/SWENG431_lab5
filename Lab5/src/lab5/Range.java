@@ -1,13 +1,13 @@
 package lab5;
 
 public class Range {
-        public final int lo;
-        public final int hi;
+        public final Integer low;
+        public final Integer high;
 
-        public Range(int lo, int hi) {
-            if (lo > hi) throw new IllegalArgumentException("Range lo > hi: " + lo + "," + hi);
-            this.lo = lo;
-            this.hi = hi;
+        public Range(int low, int high) {
+            if (low > high) throw new IllegalArgumentException("Range lo > hi: " + low + "," + high);
+            this.low = low;
+            this.high = high;
         }
-        @Override public String toString() { return lo + "," + hi; }
+        @Override public String toString() { return low + "," + high; }
 }
