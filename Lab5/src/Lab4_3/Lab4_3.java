@@ -65,12 +65,12 @@ public class Lab4_3 {
             // Attempt to read
             while (reader.hasNextLine()) {
 
-                // Read item into list
+                //Read item into list
                 String line = reader.nextLine();
                 System.out.println(line);
                 String[] data = line.trim().split("\\s+");
                 
-                // assert the test case is valid
+                //Assert the test case is valid
                 assert((Integer.parseInt(data[1])) + (Integer.parseInt(data[0])) == (Integer.parseInt(data[2])));
 
                 SwingUtilities.invokeAndWait(() -> {
@@ -81,7 +81,7 @@ public class Lab4_3 {
 
                 });
 
-                // Wait until OK is clicked
+                //Wait until OK is clicked
                 button.addActionListener(e -> {
                     synchronized(button){
                         button.notify();
@@ -101,7 +101,7 @@ public class Lab4_3 {
                 }
 
 
-                // Get output text from output field
+                //Get output text from output field
                 int actual = Integer.parseInt(((JTextField)output).getText());
                 int expected = Integer.parseInt(data[2]);
                 

@@ -121,19 +121,20 @@ public class AnimationFrame extends javax.swing.JFrame {
                     if (event instanceof MouseEvent) {
                         MouseEvent me = (MouseEvent) event;
 
-                        // Move mouse for both moved and dragged (safe)
+                        //Move mouse for both moved and dragged
                         if (me.getID() == MouseEvent.MOUSE_MOVED || me.getID() == MouseEvent.MOUSE_DRAGGED) {
                             Point p = me.getLocationOnScreen();
                             robot.mouseMove(p.x, p.y);
                             robot.delay(10);
                         }
 
-                        // Click = press + release
+                        //Click
                         if (me.getID() == MouseEvent.MOUSE_PRESSED) {
                             robot.mousePress(java.awt.event.InputEvent.BUTTON1_DOWN_MASK);
                             robot.delay(10);
                         }
 
+                        //Mouse released
                         if (me.getID() == MouseEvent.MOUSE_RELEASED) {
                             robot.mouseRelease(java.awt.event.InputEvent.BUTTON1_DOWN_MASK);
                             robot.delay(10);
