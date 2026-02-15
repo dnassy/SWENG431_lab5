@@ -1,4 +1,4 @@
-package lab5;
+package lab5_1;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Lab5 {
+public class Lab5_1 {
     // Read in contents of Eq.txt for parsing.
     // Will remain as working copy throughout
     public static final ArrayList<ArrayList<Range>> input = readFile("Eq.txt");

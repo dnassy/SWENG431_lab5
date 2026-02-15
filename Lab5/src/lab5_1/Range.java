@@ -1,4 +1,4 @@
-package lab5;
+package lab5_1;
 
 public class Range {
         public final Integer low;
