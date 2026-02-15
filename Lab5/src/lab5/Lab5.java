@@ -18,18 +18,8 @@ public class Lab5 {
     
     // Global var for access per requirements for check function prototype
     public static ArrayList<Range> working = null;
-    
-    public static int count = 1;
 
     public static void main(String[] args) {
-        for (ArrayList<Range> ranges : input){
-            for (Range range: ranges) {
-                System.out.print(range + " ");
-            }
-            System.out.print("\n");
-        }
-        System.out.print("\n");
-        
         ArrayList<Integer> list = new ArrayList<Integer>();
         recursiveGeneration(0, "", list);
     }
