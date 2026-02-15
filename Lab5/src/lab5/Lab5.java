@@ -28,10 +28,6 @@ public class Lab5 {
         if (index >= input.size()) {
             // Run for to add up running sum per requirements
             int sum = foo(values);
-            for (int num: values) {
-                System.out.print(num + ",");
-            }
-            System.out.print(sum + "\n"); //DEBUG
             // Add sum to end of string in values to coomplete test case
             output = output + sum + "\n";
             // Write test case out to file.
